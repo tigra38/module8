@@ -8,9 +8,9 @@ int main()
 
     setlocale(LC_ALL, "");
     try {
-        Array<int> a(10);
+        Array<string> a(10);
         for (auto i = 0; i < a.getSize(); i++)
-            a.set(i, i * i);
+            a.set(i, "123");
 
         cout << "Массив a (кол-во элементов: " << a.getSize() << ")." << endl;
         a.getArray();
@@ -20,11 +20,11 @@ int main()
         cout << "Массив a (кол-во элементов: " << a.getSize() << ")." << endl;
         a.getArray();
 
-        Array<int> b(a);
+        Array<string> b(a);
         cout << "Массив b (кол-во элементов: " << b.getSize() << ")." << endl;
         b.getArray();
 
-        Array<int> c(35);
+        Array<string> c(35);
         c = b;
         cout << "Массив c (кол-во элементов: " << c.getSize() << ")." << endl;
         c.getArray();

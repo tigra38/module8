@@ -5,7 +5,7 @@ template <typename T>  class Array {
 
 private:
     int m_length;			// Размер массива
-    int* m_data{};			// Указатель на массив
+    T* m_data{};			// Указатель на массив
 
 public:
     Array(int length);

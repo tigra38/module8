@@ -107,7 +107,7 @@ template <typename T> void Array<T>::remove(int index)
         return;
     }
 
-    int* data{ new int[m_length - 1] };
+    T* data{ new T[m_length - 1] };
 
     for (auto before = 0; before < index; ++before) {
         data[before] = m_data[before];
